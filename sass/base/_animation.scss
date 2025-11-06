@@ -1,0 +1,505 @@
+@keyframes logo-infinity{
+
+    from {
+
+        transform: rotateZ(0) translateZ(0);
+        
+    }
+
+    to {
+
+        transform: rotateZ(360deg) translateZ(0);
+
+    }
+
+}
+
+@keyframes logo-infinity-2{
+
+    0% {
+
+        transform: rotateZ(0);
+
+    }
+
+    25% 
+    
+    {
+
+        transform: rotateZ(180deg);
+
+    }
+
+    50% {
+
+        transform: rotateZ(180deg);
+        
+    }
+
+    75% {
+
+        transform: rotateZ(360deg)
+
+    }
+
+    100% {
+
+        transform: rotateZ(360deg)
+        
+    }
+
+}
+
+@keyframes clock {
+
+    0% {
+
+        background-image:linear-gradient(to right , #009FC2 50%, #F05133 50%);
+
+    }
+
+    1%,15% {
+
+        transform: rotateZ(30deg);
+        background-image:linear-gradient(to right , #00B25A 50%, #E31B23 50%);
+
+    }
+
+    16% {
+
+        transform: rotateZ(30deg);
+        background-image:linear-gradient(to right , #00B25A 50%, #E31B23 50%);
+        
+    }
+
+    17%,32% {
+
+        transform: rotateZ(60deg);
+        background-image:linear-gradient(to right , #7BC143 50%, #AD208E 50%);
+
+    }
+
+    33% {
+
+        transform: rotateZ(60deg);
+        background-image:linear-gradient(to right , #7BC143 50%, #AD208E 50%);
+
+    }
+
+    34%,48% {
+
+        transform: rotateZ(90deg);
+        background-image:linear-gradient(to right , #FFDD00 50%, #77278B 50%);
+
+    }
+
+    49% {
+
+        transform: rotateZ(90deg);
+        background-image:linear-gradient(to right , #FFDD00 50%, #77278B 50%);
+
+    }
+
+    50%,65% {
+
+        transform: rotateZ(120deg);
+        background-image:linear-gradient(to left , #492F92 50%, #FCB034 50%);
+
+    }
+
+    66% {
+
+        transform: rotateZ(120deg);
+        background-image:linear-gradient(to left , #492F92 50%, #FCB034 50%);
+        
+        
+    }
+
+    67%,82% {
+
+        transform: rotateZ(150deg);
+        background-image:linear-gradient(to left , #0067B1 50%, #F47B20 50%);
+
+    }
+
+    83% {
+
+        transform: rotateZ(150deg);
+        background-image:linear-gradient(to left , #0067B1 50%, #F47B20 50%);
+
+    }
+
+    84%,99% {
+
+        transform: rotateZ(180deg);
+        background-image:linear-gradient(to left , #009FC2 50%, #F05133 50%);
+
+    }
+
+    100% {
+
+        transform: rotateZ(180deg);
+        background-image:linear-gradient(to left , #009FC2 50%, #F05133 50%);
+        
+    }
+
+}
+
+
+@keyframes clock-new {
+
+    0% {
+
+
+    }
+
+    1%,6% {
+
+        transform: rotateZ(30deg);
+
+    }
+
+    7% {
+
+        transform: rotateZ(30deg);
+        
+    }
+
+    8%,13% {
+
+        transform: rotateZ(60deg);
+
+    }
+
+    14% {
+
+        transform: rotateZ(60deg);
+
+    }
+
+    15%,20% {
+
+        transform: rotateZ(90deg);
+
+    }
+
+    21% {
+
+        transform: rotateZ(90deg);
+
+    }
+
+    22%,27% {
+
+        transform: rotateZ(120deg);
+
+    }
+
+    28% {
+
+        transform: rotateZ(120deg);
+        
+    }
+
+    29%,34% {
+
+        transform: rotateZ(150deg);
+
+    }
+
+    35% {
+
+        transform: rotateZ(150deg);
+
+    }
+
+    36%,41% {
+
+        transform: rotateZ(180deg);
+
+    }
+
+    42% {
+
+        transform: rotateZ(180deg);
+        
+        
+    }
+
+    43%,48% {
+
+        transform: rotateZ(210deg);
+
+    }
+
+    49% {
+
+        transform: rotateZ(210deg);
+        
+    }
+
+    50%,55% {
+
+        transform: rotateZ(240deg);
+
+    }
+
+    56% {
+
+        transform: rotateZ(240deg);
+
+    }
+
+    57%,62% {
+
+        transform: rotateZ(270deg);
+
+    }
+
+    63% {
+
+        transform: rotateZ(270deg);
+
+    }
+
+    64%,69% {
+
+        transform: rotateZ(300deg);
+
+    }
+
+    70% {
+
+        transform: rotateZ(300deg);
+        
+    }
+
+    71%,76% {
+
+        transform: rotateZ(330deg);
+
+    }
+
+    77% {
+
+        transform: rotateZ(330deg);
+
+    }
+
+    78%,83% {
+
+        transform: rotateZ(360deg);
+
+    }
+
+    84% {
+
+        transform: rotateZ(360deg);
+        
+        
+    }
+
+}
+
+@keyframes clock-new-1 {
+
+    0% {
+
+
+    }
+
+    1%,15% {
+
+        transform: rotateZ(30deg);
+
+    }
+
+    16% {
+
+        transform: rotateZ(30deg);
+        
+    }
+
+    17%,32% {
+
+        transform: rotateZ(60deg);
+
+    }
+
+    33% {
+
+        transform: rotateZ(60deg);
+
+    }
+
+    34%,48% {
+
+        transform: rotateZ(90deg);
+
+    }
+
+    49% {
+
+        transform: rotateZ(90deg);
+
+    }
+
+    50%,65% {
+
+        transform: rotateZ(120deg);
+
+    }
+
+    66% {
+
+        transform: rotateZ(120deg);
+        
+    }
+
+    67%,82% {
+
+        transform: rotateZ(150deg);
+
+    }
+
+    83% {
+
+        transform: rotateZ(150deg);
+
+    }
+
+    84%,99% {
+
+        transform: rotateZ(180deg);
+
+    }
+
+    100% {
+
+        transform: rotateZ(180deg);
+        
+        
+    }
+
+}
+
+@keyframes clock-new-2 {
+
+    0% {
+
+
+    }
+
+    1%,15% {
+
+        transform: rotateZ(45deg);
+
+    }
+
+    16% {
+
+        transform: rotateZ(45deg);
+        
+    }
+
+    17%,32% {
+
+        transform: rotateZ(75deg);
+
+    }
+
+    33% {
+
+        transform: rotateZ(75deg);
+
+    }
+
+    34%,48% {
+
+        transform: rotateZ(105deg);
+
+    }
+
+    49% {
+
+        transform: rotateZ(105deg);
+
+    }
+
+    50%,65% {
+
+        transform: rotateZ(135deg);
+
+    }
+
+    66% {
+
+        transform: rotateZ(135deg);
+        
+    }
+
+    67%,82% {
+
+        transform: rotateZ(165deg);
+
+    }
+
+    83% {
+
+        transform: rotateZ(165deg);
+
+    }
+
+    84%,99% {
+
+        transform: rotateZ(195deg);
+
+    }
+
+    100% {
+
+        transform: rotateZ(195deg);
+        
+        
+    }
+
+}
+
+
+@keyframes wheel-rotate
+
+{
+
+    0%,35% 
+
+    {
+
+        transform:rotateZ(0);
+
+    }
+
+    50%
+
+    {
+
+        transform:rotateZ(15deg);
+
+    }
+
+    51%,85%
+
+    {
+
+        transform:rotateZ(15deg);
+
+    }
+
+    100%
+
+    {
+
+        transform:rotateZ(0);
+
+    }
+
+}

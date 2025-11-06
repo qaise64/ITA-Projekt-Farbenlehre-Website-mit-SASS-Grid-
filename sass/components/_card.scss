@@ -1,0 +1,217 @@
+.card {
+
+	// FUNCTIONALITY
+	perspective: 150rem;
+    height: 200%;
+
+	&__side {
+		
+		height: 100%;
+		transition: all .8s ease;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		border-radius: 3px;
+		overflow: hidden;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, .6);
+
+		&--front {
+
+
+			&-blue {
+
+				background-color: $color-blue;
+
+			}
+
+			&-green {
+
+				background-color: #1B551E;
+
+			}
+
+			&-red {
+
+				background-color: #4a0c1c;
+
+			}
+
+		}
+
+		&--back {
+			transform: rotateY(180deg);
+			
+			display:grid;
+			align-items: center;
+			justify-items: center;
+
+			&-1 {
+				background-color: #1B551E;
+			}
+
+			&-2 {
+				background-color: $color-blue;
+			}
+
+			&-3 {
+				background-color: #4a0c1c;
+			}
+		}
+	}
+
+
+	&:hover &__side--front {
+		transform: rotateY(-180deg);
+	}
+
+	&:hover &__side--back {
+		transform: rotateY(0);
+    }
+    
+    &__picture {
+
+		background-size: cover;
+		height: 40%;
+		background-blend-mode: screen;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+
+		&--west__1 {
+
+            background-image: linear-gradient(to right rgba(#7ed56f, .3 ) , rgba(#28b485,.3)) , url(img/west-green.jpg);
+            
+		}
+
+		&--west__2 {
+
+            background-image: linear-gradient(to right , rgba(#2998ff,.3),rgba(#5643fa,.3)) , url(img/west-blue.jpg) ;
+            
+		}
+
+		&--west__3{
+
+            background-image: linear-gradient(to right ,rgba(#FF0000  ,.3) , rgba(#8b0000, .3))   ,  url(img/west-red.jpg);
+            
+        }
+
+        &--india__1 {
+
+            background-image: linear-gradient(to right rgba(#7ed56f, .3 ) , rgba(#28b485,.3)) , url(img/india-green.jpg);
+            
+		}
+
+		&--india__2 {
+
+            background-image: linear-gradient(to right , rgba(#2998ff,.3),rgba(#5643fa,.3)) , url(img/india-blue.jpg) ;
+            
+		}
+
+		&--india__3{
+
+            background-image: linear-gradient(to right ,rgba(#FF0000  ,.3) , rgba(#8b0000, .3))   ,  url(img/india-red.jpg);
+            
+        }
+
+        &--china__1 {
+
+            background-image: linear-gradient(to right rgba(#7ed56f, .3) , rgba(#28b485,.3)) , url(img/china-green.jpg);
+            
+		}
+
+		&--china__2 {
+
+            background-image: linear-gradient(to right , rgba(#2998ff,.3),rgba(#5643fa,.3)) , url(img/china-blue.jpg) ;
+            
+		}
+
+		&--china__3{
+
+            background-image: linear-gradient(to right ,rgba(#FF0000  ,.3) , rgba(#8b0000, .3))   ,  url(img/china-red.jpg);
+            
+        }
+        
+	}
+	
+	&__heading {
+		font-size: 2.5rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: center;
+		color: #CAE2F0;
+		position: absolute;
+		top: 12.5rem;
+		left: 7rem;
+		width: 75%;
+
+		&--1 {
+			background-image: linear-gradient(to right bottom,
+					rgba(#7ed56f, .85),
+					rgba(#28b485, .85));
+		}
+
+		&--2 {
+			background-image: linear-gradient(to right bottom,
+					rgba(#2998ff, .85),
+					rgba(#5643fa, .85));
+		}
+
+		&--3 {
+			background-image: linear-gradient(to right bottom,
+					rgba(#FF0000, .85),
+					rgba(#8b0000, .85));
+		}
+
+	}
+
+	&__details {
+
+		height:60%;
+		width:100%;
+		padding-top: 1.5rem;
+		color: #CAE2F0;
+
+		ul {
+			list-style: none;
+			width: 80%;
+			margin: 0 auto;
+
+			li {
+				text-align: center;
+				font-size: 1.3rem;
+				padding: 1rem;
+				text-transform: uppercase;
+
+				&:not(:last-child) {
+					border-bottom: 1px solid #d3d3d3;
+				}
+			}
+		}
+	}
+
+	&__cta {
+		
+		text-align: center;
+		display:grid;
+		padding:2rem;
+	}
+
+	&__detail-box {
+
+		text-align: center;
+		color: $color-white;
+
+	}
+
+	&__detail-only {
+		font-size: 1.5rem;
+		color: #CAE2F0;
+		line-height: 3rem;
+		text-align: justify;
+	}
+    
+}

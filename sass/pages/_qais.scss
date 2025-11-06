@@ -1,0 +1,1190 @@
+.qais-main__introduction
+
+{
+
+    height:100%;
+    grid-row: 3 / 4;
+    grid-column: left-gap-start / right-gap-end;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: $color-blue-dark;
+
+    &--qais {
+
+        height: 100%;
+        width:100%;
+        grid-row: 1 / 4;
+        grid-column: 1 / 3;
+        margin-right:11rem;
+        
+        display:grid;    
+
+        &-img { 
+
+            grid-row:1;
+            grid-column:1;
+            width:85%;
+            justify-self: center;
+            align-self:center;
+
+        }
+
+        &-logo {
+
+            margin-right:6.7rem;
+            margin-bottom:1rem;
+            grid-row:1;
+            grid-column:1;
+            width:10%;
+            justify-self: center;
+            align-self:center;
+            animation: logo-infinity linear infinite 2s;
+            backface-visibility: hidden;
+
+        }
+    
+    }
+
+}
+
+.qais-harmonie 
+
+{
+
+    grid-row: 4 / 5;
+    grid-column: left-gap-start / right-gap-end;
+
+    display:grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr;
+    background-color: $color-blue-light;
+    border-top: 0.5rem $color-blue-light solid;
+    border-bottom: 0.5rem $color-blue-light solid;
+
+    &__detail 
+    
+    {
+
+        grid-column: 1 / 2;
+
+        display:grid;
+        grid-template-rows: 20vh 1fr;
+
+        &--title 
+        
+        {
+
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            align-self: end;
+            justify-self: center;
+            color: $color-blue-dark;
+            font-size: 2.2rem;
+            font-weight: 500;
+
+        }
+
+        &--explain
+        
+        {
+
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+
+            display:grid;
+
+            &-img 
+            
+            {
+
+                
+                width:75%;
+                align-self: center;
+                justify-self:center;
+
+            }
+
+        }
+
+    }
+
+    &__wheel 
+    
+    {
+
+        grid-column: 2 / 3;
+
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%; 
+        background-color:$color-blue-dark;
+
+        &--img 
+        
+        {
+
+            width:60%;
+            align-self: center;
+            justify-self: center;
+
+        } 
+
+    }
+
+}
+
+.harmonie-types 
+
+{
+
+    margin-top: 4rem;
+    grid-row: 5 / 6;
+    grid-column: 1 / -1;
+    height:100%;
+    width:100%;
+    background-color: $color-blue-dark;
+
+    display:grid;
+    justify-items: center;
+
+    & h2
+    
+    {
+
+        align-self: center;
+        color: $color-blue-light;
+        font-size: 1.9rem;
+        font-weight: 400;
+        letter-spacing: 0.2rem;
+
+    }
+
+}
+
+.qais-harmonie-types-1
+
+{
+
+    margin-top: 6rem;
+    grid-row: 6 / 12;
+    grid-column: 2 / 10;
+
+    border-top-left-radius: 30rem;
+    border-bottom-left-radius: 30rem;
+
+    display: grid;
+    grid-template-columns:2rem 1fr 1fr 1fr 2rem;
+    grid-template-rows:2rem 1fr 2.5rem 1fr 2.5rem 1fr 2.5rem 1fr 2.5rem 1fr 2.5rem 1fr;
+    background-color: $color-blue;
+
+    &__harmonie-1 {
+
+        grid-row: 2 / 3;
+        grid-column: 2 / 5;
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        background-color:$color-blue-dark;
+        border-top-left-radius: 30rem;
+        border: 1rem $color-blue-dark solid;
+        padding:2rem;
+
+        &--wheel {
+
+            grid-row:1 / 2;
+            grid-column: 1 / 2;
+
+            border-top-left-radius: 30rem;
+            border-bottom-right-radius: 30rem;
+            background-color: $color-blue-dark;
+            border:0.1rem $color-yellow solid;
+            
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+            &-img
+            
+            {
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+
+                width:75%;
+                align-self: center;
+                justify-self: center;
+
+            }
+
+            &-clock
+
+            {
+
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+
+                background-image:linear-gradient(to right , #009FC2 50%, #F05133 50%);
+                align-self: center;
+                justify-self: center;
+                height: 1rem;
+                width: 50%;
+                clip-path: polygon(16% 0, 85% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%);
+
+            }
+
+        }
+
+        &--wheel:hover > .qais-harmonie-types-1__harmonie-1--wheel-clock 
+        
+        {
+
+            animation: clock cubic-bezier(.5,-0.59,.51,1.6) infinite 7s;
+
+        }
+
+        &--detail 
+        
+        {
+
+            grid-row:1 / 2;
+            grid-column: 2 / 3;
+
+            background-color: $color-blue-dark;
+            display: grid;
+            grid-template-rows: 0.5fr 0.7fr 1fr 0.25fr 1fr 0.25fr 1.3fr 0.5fr;
+            grid-template-columns: 5rem 1fr 5rem;
+
+            &--h2-1 
+            
+            {
+
+                grid-row : 2 / 3;
+                grid-column: 1 / 4;
+                justify-self: center;
+
+                color: $color-yellow;
+                font-size: 1.8rem;
+                font-weight: 400;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+
+            }
+
+            &--h2-2 
+            
+            {
+
+                grid-row : 4 / 5;
+                grid-column: 2 / 4;
+                align-self: center;
+
+                color: $color-yellow;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.2rem;
+
+            }
+
+            &--h2-3 
+            
+            {
+
+                grid-row : 6 / 7;
+                grid-column: 2 / 4;
+                align-self: center;
+
+                color: $color-yellow;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.2rem;
+
+            }
+
+            &--p-1 {
+
+                grid-row : 3 / 4;
+                grid-column: 2 / 3;
+
+                color: $color-blue-light;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.1rem;
+
+            }
+
+            &--p-2 {
+
+                grid-row : 5 / 6;
+                grid-column: 2 / 3;
+
+                color: $color-blue-light;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.1rem;
+                padding-top: 1rem;
+
+            }
+
+            &--p-3 {
+
+                grid-row : 7 / 8;
+                grid-column: 2 / 3;
+
+                color: $color-blue-light;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.1rem;
+                padding-top: 1rem;
+
+            }
+
+        }
+
+    }
+
+    &__harmonie-2 
+    
+    {
+
+        grid-row: 4 / 5;
+        grid-column: 2 / 5;
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        background-color:$color-blue-dark;
+        border: 1rem $color-blue-dark solid;
+        padding:2rem;
+
+        &--wheel {
+
+            grid-row:1 / 2;
+            grid-column: 2 / 3;
+
+            background-color: $color-blue-dark;
+            border:0.1rem $color-yellow solid;
+            
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+            border-top-left-radius: 30rem;
+            border-bottom-left-radius: 30rem;
+
+            &-img
+            
+            {
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+
+                width:75%;
+                align-self: center;
+                justify-self: center;
+
+            }
+
+            &-clock
+
+            {
+
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+                align-self: center;
+                justify-self: center;
+                height: 50%;
+                width: 50%;
+                overflow: visible;
+                position: relative;
+                align-items: center;
+
+                &-1 
+                
+                {
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(15% 0, 15% 20%, 50% 20%, 50% 80%, 15% 80%, 15% 100%, 0% 50%);
+                    background-color: $color-yellow;
+                    transform :  translateY(-50%);
+                    position: absolute;
+                    top:50.25%;
+                    
+                }
+
+                &-2 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(15% 0, 15% 20%, 50% 20%, 50% 80%, 15% 80%, 15% 100%, 0% 50%);
+                    background-color: $color-yellow;
+                    transform : rotateZ(30deg) translateX(-0.9%) translateY(-50%);
+                    position: absolute;
+                    top:50%;
+
+                }
+
+                &-3 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(15% 0, 15% 20%, 50% 20%, 50% 80%, 15% 80%, 15% 100%, 0% 50%);
+                    background-color: $color-yellow;
+                    transform : rotateZ(60deg) translateX(-1%) translateY(-45%);
+                    position: absolute;
+                    top:50%;
+
+                }
+
+                &-4 
+                
+                {
+
+                    height: 3rem;
+                    width:3rem;
+                    background-color: $color-yellow;
+                    position: absolute;
+                    transform : translateX(-50%) translateY(-51%);
+                    top:50%;
+                    left:50%;
+                    border-radius: 50%;
+
+                }
+
+            }
+
+        }
+
+        &--wheel:hover > .qais-harmonie-types-1__harmonie-2--wheel-clock 
+        
+        {
+
+            animation: clock-new cubic-bezier(.5,-0.59,.51,1.6) infinite 14s;
+
+        }
+
+        &--detail 
+        
+        {
+
+            grid-row:1 / 2;
+            grid-column: 1 / 2;
+
+            display: grid;
+            grid-template-rows: 0.5fr 0.7fr 1fr 0.25fr 1fr 0.25fr 1.3fr 0.5fr;
+            grid-template-columns: 5rem 1fr 5rem;
+
+            
+        }
+
+    }
+
+    &__harmonie-3 
+    
+    {
+
+        grid-row: 6 / 7;
+        grid-column: 2 / 5;
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        background-color:$color-blue-dark;
+        border: 1rem $color-blue-dark solid;
+        padding:2rem;
+
+        &--wheel {
+
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+    
+            background-color: $color-blue-dark;
+            border:0.1rem $color-yellow solid;
+            
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+    
+            border-top-right-radius: 30rem;
+    
+            &-img
+            
+            {
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+    
+                width:75%;
+                align-self: center;
+                justify-self: center;
+    
+            }
+    
+            &-clock
+
+            {
+
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+                align-self: center;
+                justify-self: center;
+                height: 50.63%;
+                width: 50%;
+                position: relative;
+
+                clip-path: polygon(50% 0%, 6% 76%, 96% 76%);
+                background-color: $color-yellow;
+
+                &-1 
+                
+                {
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(90deg);
+                    position: absolute;
+                    top:50%;
+
+                    
+                }
+
+                &-2 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(210deg) ;
+                    position: absolute;
+                    top:49%;
+
+                }
+
+                &-3 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(330deg);
+                    position: absolute;
+                    top:49%;
+
+                }
+
+                &-4 
+                
+                {
+
+                    height: 3rem;
+                    width:3rem;
+                    background-color: $color-blue-dark;
+                    position: absolute;
+                    transform : translateX(-50%) translateY(-50%);
+                    top:50%;
+                    left:50%;
+                    border-radius: 50%;
+                    z-index: 10;
+
+                }
+
+            }
+    
+        }
+    
+        &--wheel:hover > .qais-harmonie-types-1__harmonie-3--wheel-clock 
+        
+        {
+    
+            animation: clock-new cubic-bezier(.5,-0.59,.51,1.6) infinite 14s;
+    
+        }
+    
+        &--detail 
+            
+        {
+    
+            grid-row:1 / 2;
+            grid-column: 2 / 3;
+    
+             display: grid;
+            grid-template-rows: 0.5fr 0.7fr 1fr 0.25fr 1fr 0.25fr 1.3fr 0.5fr;
+            grid-template-columns: 5rem 1fr 5rem;
+        
+        }
+
+    }
+
+    &__harmonie-4
+    
+    {
+
+        grid-row: 8 / 9;
+        grid-column: 2 / 5;
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        background-color:$color-blue-dark;
+        border: 1rem $color-blue-dark solid;
+        padding:2rem;
+
+        &--wheel {
+
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+    
+            background-color: $color-blue-dark;
+            border:0.1rem $color-yellow solid;
+            
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+    
+            border-bottom-left-radius: 30rem;
+    
+            &-img
+            
+            {
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+    
+                width:75%;
+                align-self: center;
+                justify-self: center;
+    
+            }
+    
+            &-clock
+
+            {
+
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+                align-self: center;
+                justify-self: center;
+                height: 50.63%;
+                width: 50%;
+                position: relative;
+
+                clip-path: polygon(50% 0%, 25% 95%, 75% 95%);
+                background-color: $color-yellow;
+
+                &-1 
+                
+                {
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(90deg);
+                    position: absolute;
+                    top:50%;
+
+                    
+                }
+
+                &-2 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(242deg) ;
+                    position: absolute;
+                    top:49%;
+
+                }
+
+                &-3 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(298deg);
+                    position: absolute;
+                    top:49%;
+
+                }
+
+                &-4 
+                
+                {
+
+                    height: 3rem;
+                    width:3rem;
+                    background-color: $color-blue-dark;
+                    position: absolute;
+                    transform : translateX(-50%) translateY(-50%);
+                    top:50%;
+                    left:50%;
+                    border-radius: 50%;
+                    z-index: 10;
+
+                }
+
+            }
+    
+        }
+    
+        &--wheel:hover > .qais-harmonie-types-1__harmonie-4--wheel-clock 
+        
+        {
+    
+            animation: clock-new cubic-bezier(.5,-0.59,.51,1.6) infinite 14s;
+    
+        }
+    
+        &--detail 
+            
+        {
+    
+            grid-row:1 / 2;
+            grid-column: 1 / 2;
+    
+            display: grid;
+            grid-template-rows: 0.5fr 0.7fr 1fr 0.25fr 1fr 0.25fr 1.3fr 0.5fr;
+            grid-template-columns: 5rem 1fr 5rem;
+
+            &--h2-1 
+            
+            {
+
+                grid-row : 2 / 3;
+                grid-column: 1 / 4;
+                justify-self: center;
+
+                color: $color-yellow;
+                font-size: 1.8rem;
+                font-weight: 400;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+
+            }
+
+            &--h2-2 
+            
+            {
+
+                grid-row : 4 / 5;
+                grid-column: 2 / 4;
+                align-self: center;
+
+                color: $color-yellow;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.2rem;
+
+            }
+
+            &--h2-3 
+            
+            {
+
+                grid-row : 6 / 7;
+                grid-column: 2 / 4;
+                align-self: center;
+
+                color: $color-yellow;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.2rem;
+
+            }
+
+            &--p-1 {
+
+                grid-row : 3 / 4;
+                grid-column: 2 / 3;
+
+                color: $color-blue-light;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.1rem;
+
+            }
+
+            &--p-2 {
+
+                grid-row : 5 / 6;
+                grid-column: 2 / 3;
+
+                color: $color-blue-light;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.1rem;
+                padding-top: 1rem;
+
+            }
+
+            &--p-3 {
+
+                grid-row : 7 / 8;
+                grid-column: 2 / 3;
+
+                color: $color-blue-light;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.1rem;
+                padding-top: 1rem;
+
+            }
+        
+        }
+
+    }
+
+    &__harmonie-5
+    
+    {
+
+        grid-row: 10 / 11;
+        grid-column: 2 / 5;
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        background-color:$color-blue-dark;
+        border: 1rem $color-blue-dark solid;
+        padding:2rem;
+
+        &--wheel {
+
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+    
+            background-color: $color-blue-dark;
+            border:0.1rem $color-yellow solid;
+            
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+    
+            border-top-right-radius: 30rem;
+            border-bottom-right-radius: 30rem;
+    
+            &-img
+            
+            {
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+    
+                width:75%;
+                align-self: center;
+                justify-self: center;
+    
+            }
+    
+            &-clock
+
+            {
+
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+                align-self: center;
+                justify-self: center;
+                width: 45%;
+                height: 25%;
+                position: relative;
+
+                background-color: $color-yellow;
+
+                &-1 
+                
+                {
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(30deg);
+                    position: absolute;
+                    top:48%;
+
+                    
+                }
+
+                &-2 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(210deg) ;
+                    position: absolute;
+                    top:48%;
+
+                }
+
+                &-3 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(330deg);
+                    position: absolute;
+                    top:48%;
+
+                }
+
+                &-5 
+                
+                {
+
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(150deg);
+                    position: absolute;
+                    top:48%;
+
+
+                }
+
+                &-4 
+                
+                {
+
+                    height: 3rem;
+                    width:3rem;
+                    background-color: $color-blue-dark;
+                    position: absolute;
+                    transform : translateX(-50%) translateY(-50%);
+                    top:52%;
+                    left:50%;
+                    border-radius: 50%;
+                    z-index: 10;
+
+                }
+
+            }
+    
+        }
+    
+        &--wheel:hover > .qais-harmonie-types-1__harmonie-5--wheel-clock 
+        
+        {
+    
+            animation: clock-new cubic-bezier(.5,-0.59,.51,1.6) infinite 14s;
+    
+        }
+    
+        &--detail 
+            
+        {
+    
+            grid-row:1 / 2;
+            grid-column: 2 / 3;
+    
+            display: grid;
+            grid-template-rows: 0.5fr 0.7fr 1fr 0.25fr 1fr 0.25fr 1.3fr 0.5fr;
+            grid-template-columns: 5rem 1fr 5rem;
+        
+        }
+
+    }
+
+    &__harmonie-6
+    
+    {
+
+        grid-row: 12 / 13;
+        grid-column: 2 / 5;
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        background-color:$color-blue-dark;
+        border: 1rem $color-blue-dark solid;
+        padding:2rem;
+        border-bottom-right-radius: 30rem;
+
+        &--wheel {
+
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+    
+            background-color: $color-blue-dark;
+            border:0.1rem $color-yellow solid;
+            
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+    
+            border-top-left-radius: 30rem;
+            border-bottom-right-radius: 30rem;
+    
+            &-img
+            
+            {
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+    
+                width:75%;
+                align-self: center;
+                justify-self: center;
+    
+            }
+    
+            &-clock
+
+            {
+
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+                align-self: center;
+                justify-self: center;
+                height: 50.63%;
+                width: 50%;
+                position: relative;
+
+                clip-path: inset(15% 15% 15% 15%);
+                background-color: $color-yellow;
+                transform: rotateZ(15deg);
+
+                &-1 
+                
+                {
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(45deg);
+                    position: absolute;
+                    top:48%;
+                    
+                }
+
+                &-2 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(135deg) ;
+                    position: absolute;
+                    top:48%;
+
+                }
+
+                &-3 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(225deg);
+                    position: absolute;
+                    top:48%;
+
+                }
+
+                &-5 
+                
+                {
+
+                    height: 1rem;
+                    width:100%;
+                    clip-path: polygon(30% 0, 30% 20%, 50% 20%, 50% 80%, 30% 79%, 30% 100%, 10% 50%);
+                    background-color: $color-blue-dark;
+                    transform : rotateZ(315deg);
+                    position: absolute;
+                    top:48%;
+
+                }
+
+                &-4 
+                
+                {
+
+                    height: 3rem;
+                    width:3rem;
+                    background-color: $color-blue-dark;
+                    position: absolute;
+                    transform : translateX(-50%) translateY(-50%);
+                    top:50%;
+                    left:50%;
+                    border-radius: 50%;
+                    z-index: 10;
+
+                }
+
+            }
+    
+        }
+    
+        &--wheel:hover > .qais-harmonie-types-1__harmonie-6--wheel-clock 
+        
+        {
+    
+            animation: clock-new-2 cubic-bezier(.5,-0.59,.51,1.6) infinite 8s;
+    
+        }
+    
+        &--detail 
+            
+        {
+    
+            grid-row:1 / 2;
+            grid-column: 1 / 2;
+    
+            display: grid;
+            grid-template-rows: 0.5fr 0.7fr 1fr 0.25fr 1fr 0.25fr 1.3fr 0.5fr;
+            grid-template-columns: 5rem 1fr 5rem;
+        
+        }
+
+    }
+    
+}
+
+.end-qais 
+
+    {
+
+    display:grid;
+
+    grid-row: 12 / 13 ;
+    grid-column: 2 / 10 ;
+
+    justify-items: center;
+    align-items: center;
+
+    & h2 {
+
+        color: $color-blue-light;
+        font-size:1.5rem;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+
+    }
+
+}
+
+
