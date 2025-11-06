@@ -7,8 +7,6 @@ Das ursprungliche Ziel war eine Praesentation ueber Farbenlehre. Ich habe mich e
 **WICHTIG:** Sie koennen sich das Projekt hier live ansehen:
 **[Live-Demo (geoeffnet mit GitHub Pages)](https://qaise64.github.io/ita-projekt-farbenlehre-website/)**
 
-*(Bitte ersetzen Sie den obigen Link durch Ihren eigenen GitHub Pages Link, nachdem Sie es aktiviert haben.)*
-
 ## Technischer Fokus
 
 Dieses Projekt war ein naechster Schritt nach den Grundlagen der ersten Website.
