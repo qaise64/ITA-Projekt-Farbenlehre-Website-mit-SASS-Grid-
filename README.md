@@ -5,7 +5,7 @@ Hallo! Dies ist mein zweites grosses Web-Projekt aus meiner ITA-Ausbildung (2. J
 Das ursprungliche Ziel war eine Praesentation ueber Farbenlehre. Ich habe mich entschieden, das Thema stattdessen als interaktive Website umzusetzen.
 
 **WICHTIG:** Sie koennen sich das Projekt hier live ansehen:
-**[Live-Demo (geoeffnet mit GitHub Pages)](https://DEIN-BENUTZERNAME.github.io/ita-projekt-farbenlehre-website)**
+**[Live-Demo (geoeffnet mit GitHub Pages)](https://qaise64.github.io/ita-projekt-farbenlehre-website/)**
 
 *(Bitte ersetzen Sie den obigen Link durch Ihren eigenen GitHub Pages Link, nachdem Sie es aktiviert haben.)*
 
